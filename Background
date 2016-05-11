@@ -1,0 +1,21 @@
+void setup()
+{
+  size(600, 600);
+}
+
+void back()
+{
+  int x = 0, y = 0, y2 = 300, size = 300;
+ 
+  noStroke();
+  fill(71, 222, 255);
+  rect(x, y, size*2, size);
+  
+  fill(85, 255, 55);
+  rect(x, y2, size*2, size);
+}
+
+void draw()
+{
+ back();
+}
