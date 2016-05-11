@@ -1,0 +1,37 @@
+void setup()
+{
+  size(600, 600);
+ 
+}
+
+void back()
+{
+  int x = 0, y = 0, y2 = 300, size = 300;
+ 
+  noStroke();
+  fill(71, 222, 255);
+  rect(x, y, size*2, size);
+  
+  fill(85, 255, 55);
+  rect(x, y2, size*2, size);
+}
+
+void plane()
+{
+  fill(90, 99, 87);
+  int xx = 200, y = 100, size = 50, leng = xx + size*2;
+  rect (xx, y, size*2.5, size);
+  rect (xx + 45, y-25, size/1.3, size*2);
+  
+  for (int x = 200 ; x <= leng ; x += 50)
+  {  
+   stroke (255);
+   rect(x, y + 15, size/2.2, size/2.2); 
+  }
+}
+
+void draw()
+{
+ back();
+ plane();
+}
